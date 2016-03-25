@@ -26,6 +26,7 @@ import android.graphics.PixelFormat;
 import android.media.AudioManager;
 import android.net.Uri;
 import android.os.Build;
+import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.util.Pair;
 import android.util.SparseArray;
@@ -33,6 +34,7 @@ import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+import android.view.TextureView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
@@ -464,8 +466,10 @@ public class VideoView extends SurfaceView implements MediaController.MediaPlaye
 
       if (mUri != null) {
         List<String> paths = mUri.getPathSegments();
-        String name = paths == null || paths.isEmpty() ? "null" : paths.get(paths.size() - 1);
-        mMediaController.setFileName(name);
+        if (TextUtils.isEmpty(mMediaController.getTitle())){
+            String name = paths == null || paths.isEmpty() ? "null" : paths.get(paths.size() - 1);
+            mMediaController.setFileName(name);
+        }
       }
     }
   }

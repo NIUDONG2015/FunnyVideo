@@ -307,6 +307,10 @@ public class MediaController extends FrameLayout {
       mFileName.setText(mTitle);
   }
 
+  public String getTitle(){
+    return mTitle;
+  }
+
   /**
    * Set the View to hold some information when interact with the
    * MediaController

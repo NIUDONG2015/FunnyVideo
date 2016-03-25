@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FunnyVideo.iml" filepath="$PROJECT_DIR$/FunnyVideo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/autoswaprefresh/autoswaprefresh.iml" filepath="$PROJECT_DIR$/autoswaprefresh/autoswaprefresh.iml" />
       <module fileurl="file://$PROJECT_DIR$/vitamio-lib/vitamio-lib.iml" filepath="$PROJECT_DIR$/vitamio-lib/vitamio-lib.iml" />
     </modules>
   </component>

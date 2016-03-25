@@ -1,1 +1,1 @@
-include ':app', ':vitamio-lib'
+include ':app', ':vitamio-lib', ':autoswaprefresh'

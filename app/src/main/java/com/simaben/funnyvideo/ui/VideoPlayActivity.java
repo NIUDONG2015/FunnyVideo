@@ -46,8 +46,11 @@ public class VideoPlayActivity extends Activity {
         ButterKnife.bind(this);
 
         String path = getIntent().getStringExtra(Constants.ARG_VIDEO_PATH);
+        String name = getIntent().getStringExtra(Constants.ARG_VIDEO_NAME);
         mVideoView.setVideoPath(path);
-        mVideoView.setMediaController(new MediaController(this));
+        MediaController controller = new MediaController(this);
+        controller.setFileName(name);
+        mVideoView.setMediaController(controller);
         mVideoView.requestFocus();
 
         mVideoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {

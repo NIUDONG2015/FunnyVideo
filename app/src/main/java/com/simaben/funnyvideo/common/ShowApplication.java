@@ -23,14 +23,14 @@ public class ShowApplication extends Application {
         application = this;
 
         DisplayImageOptions options = new DisplayImageOptions.Builder()
-                .showImageOnLoading(R.mipmap.default_img) // resource or drawable
-                .showImageForEmptyUri(R.mipmap.default_img) // resource or drawable
-                .showImageOnFail(R.mipmap.default_img) // resource or drawable
+                .showImageOnLoading(R.mipmap.bili_default_image_tv) // resource or drawable
+                .showImageForEmptyUri(R.mipmap.bili_default_image_tv) // resource or drawable
+                .showImageOnFail(R.mipmap.bili_default_image_tv) // resource or drawable
                 .resetViewBeforeLoading(false)  // default
                 .delayBeforeLoading(1000)
                 .cacheInMemory(true) // default
                 .cacheOnDisk(true) // default
-                .imageScaleType(ImageScaleType.IN_SAMPLE_POWER_OF_2) // default
+                .imageScaleType(ImageScaleType.EXACTLY) // default
                 .bitmapConfig(Bitmap.Config.RGB_565) // default
                 .displayer(new SimpleBitmapDisplayer()) // default
                 .build();

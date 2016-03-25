@@ -10,7 +10,7 @@ import com.simaben.funnyvideo.R;
 import com.simaben.funnyvideo.bean.QiubaiVideo.ShowapiResBodyBean.PagebeanBean.ContentlistBean;
 import com.simaben.funnyvideo.common.Constants;
 
-public class MainActivity extends AppCompatActivity implements ItemFragment.OnListFragmentInteractionListener<ContentlistBean> {
+public class MainActivity extends AppCompatActivity  {
 
 
     @Override
@@ -18,13 +18,6 @@ public class MainActivity extends AppCompatActivity implements ItemFragment.OnLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         replace(ItemFragment.newInstance(2));
-    }
-
-    @Override
-    public void onListFragmentInteraction(ContentlistBean item) {
-        Intent intent = new Intent(this, VideoPlayActivity.class);
-        intent.putExtra(Constants.ARG_VIDEO_PATH, item.getVideo_uri());
-        startActivity(intent);
     }
 
     public void replace(Fragment fragment) {
