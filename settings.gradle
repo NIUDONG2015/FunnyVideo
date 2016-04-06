@@ -1,1 +1,1 @@
-include ':app', ':vitamio-lib', ':autoswaprefresh'
+include ':app', ':vitamio-lib', ':autoswaprefresh', ':viewpagerindicatorlibrary'

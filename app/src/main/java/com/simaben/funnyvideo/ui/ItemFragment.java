@@ -88,13 +88,13 @@ public class ItemFragment extends Fragment {
     private void initAdapter(List data) {
         RecyclerView.LayoutManager layoutManager = null;
         if (mColumnCount == 1) {
-            layoutManager = new LinearLayoutManager(getContext());
+            layoutManager = new LinearLayoutManager(getActivity());
         } else if (mColumnCount == -1) {
             layoutManager = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
         } else {
-            layoutManager = new GridLayoutManager(getContext(), mColumnCount);
+            layoutManager = new GridLayoutManager(getActivity(), mColumnCount);
         }
-        adapter = new MyItemRecyclerViewAdapter(getContext(), data, false, layoutManager);
+        adapter = new MyItemRecyclerViewAdapter(getActivity(), data, false, layoutManager);
         mRecyclerView.setAdapter(adapter);
         mRecyclerView.setAutoLayoutManager(layoutManager);
         mRecyclerView.addItemDecoration(new ItemDecorationAlbumColumns(getResources().getDimensionPixelSize(R.dimen.photos_list_spacing), mColumnCount));
@@ -156,7 +156,7 @@ public class ItemFragment extends Fragment {
                     @Override
                     public void onCompleted() {
                         mRefreshLayout.setRefreshing(false);
-                        if (currentPage!=1){
+                        if (currentPage != 1) {
                             mRecyclerView.notifyMoreLoaded();
                         }
                     }
@@ -164,7 +164,7 @@ public class ItemFragment extends Fragment {
                     @Override
                     public void onError(Throwable e) {
                         mRefreshLayout.setRefreshing(false);
-                        if (currentPage!=1){
+                        if (currentPage != 1) {
                             mRecyclerView.notifyMoreLoaded();
                         }
                     }

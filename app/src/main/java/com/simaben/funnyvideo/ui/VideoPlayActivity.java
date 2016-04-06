@@ -47,6 +47,7 @@ public class VideoPlayActivity extends Activity {
 
         String path = getIntent().getStringExtra(Constants.ARG_VIDEO_PATH);
         String name = getIntent().getStringExtra(Constants.ARG_VIDEO_NAME);
+        path = "http://live.hkstv.hk.lxdns.com/live/hks/playlist.m3u8";
         mVideoView.setVideoPath(path);
         MediaController controller = new MediaController(this);
         controller.setFileName(name);
