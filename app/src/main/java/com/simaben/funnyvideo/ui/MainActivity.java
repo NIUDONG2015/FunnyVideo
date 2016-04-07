@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
     static List<TitleTab> allFragments = new ArrayList<>();
 
     @Bind(R.id.indicator)
-    UnderlinePageIndicator indicator;
+    TabPageIndicator indicator;
     @Bind(R.id.pager)
     ViewPager viewPager;
 
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
         pagerAdapter = new CollectionPagerAdapter(getSupportFragmentManager());
         viewPager.setAdapter(pagerAdapter);
         indicator.setViewPager(viewPager);
-        indicator.setFades(false);
+//        indicator.setFades(false);
         indicator.setOnPageChangeListener(this);
 
 
