@@ -118,7 +118,7 @@ public class LocalFragment extends BaseFragment {
                             if (file.isDirectory()) {
                                 reloadRecyclerView(file);
                             }
-                        }else {
+                        } else {
                             setEmpty(false);
                         }
                     }
@@ -133,9 +133,7 @@ public class LocalFragment extends BaseFragment {
                 return !pathname.isHidden();
             }
         });
-        if (fileArray == null || file.length() == 0) {
-            setEmpty(false);
-        } else {
+        if (fileArray!=null){
             Arrays.sort(fileArray, new Comparator<File>() {
                 @Override
                 public int compare(File lhs, File rhs) {
@@ -144,6 +142,7 @@ public class LocalFragment extends BaseFragment {
             });
             fileAdapter.setData(Arrays.asList(fileArray));
         }
+
     }
 
     public boolean onBackPressed() {
