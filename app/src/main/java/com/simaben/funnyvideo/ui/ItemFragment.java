@@ -71,7 +71,7 @@ public class ItemFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_item_list, container, false);
+        View view = inflater.inflate(R.layout.fragment_qiubai_list, container, false);
         ButterKnife.bind(this, view);
         initAdapter(null);
         refresh();
@@ -114,15 +114,9 @@ public class ItemFragment extends Fragment {
         adapter.setOnItemClickListener(new OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
-                ContentlistBean item = (ContentlistBean) adapter.getData().get(position);
-                Intent intent = new Intent(view.getContext(), VideoPlayActivity.class);
-                intent.putExtra(Constants.ARG_VIDEO_PATH, item.getVideo_uri());
-                intent.putExtra(Constants.ARG_VIDEO_NAME, item.getText());
-                //让新的Activity从一个小的范围扩大到全屏
-                ActivityOptionsCompat options = ActivityOptionsCompat
-                        .makeScaleUpAnimation(view, view.getWidth() / 2, view.getHeight() / 2, 0,
-                                0);
-                ActivityCompat.startActivity(getActivity(), intent, options.toBundle());
+                ContentlistBean item = adapter.getData().get(position);
+                Intent intent = VideoPlayActivity.startSelf(view.getContext(), item.getVideo_uri(), item.getText());
+                startActivity(intent);
             }
 
             @Override

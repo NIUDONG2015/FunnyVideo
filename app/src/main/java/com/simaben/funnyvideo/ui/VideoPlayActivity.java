@@ -18,10 +18,16 @@ package com.simaben.funnyvideo.ui;
 
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.ActivityOptionsCompat;
+import android.view.ViewGroup;
 
 import com.simaben.funnyvideo.R;
 import com.simaben.funnyvideo.common.Constants;
+import com.simaben.funnyvideo.utils.Util;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -42,12 +48,21 @@ public class VideoPlayActivity extends Activity {
             finish();
             return;
         }
-        setContentView(R.layout.videoview);
+        setContentView(R.layout.activity_videoview);
         ButterKnife.bind(this);
+
+//        int h = Util.getWindowsHeight(this)/3;
+//        ViewGroup.LayoutParams params  = mVideoView.getLayoutParams();
+//        if (params==null){
+//            params = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,h);
+//        }else{
+//            params.height = h;
+//        }
+//        mVideoView.setLayoutParams(params);
+
 
         String path = getIntent().getStringExtra(Constants.ARG_VIDEO_PATH);
         String name = getIntent().getStringExtra(Constants.ARG_VIDEO_NAME);
-        path = "http://live.hkstv.hk.lxdns.com/live/hks/playlist.m3u8";
         mVideoView.setVideoPath(path);
         MediaController controller = new MediaController(this);
         controller.setFileName(name);
@@ -62,6 +77,13 @@ public class VideoPlayActivity extends Activity {
         });
 
 
+    }
+
+    public static Intent startSelf(Context ctx,String path, String name) {
+        Intent intent = new Intent(ctx, VideoPlayActivity.class);
+        intent.putExtra(Constants.ARG_VIDEO_PATH, path);
+        intent.putExtra(Constants.ARG_VIDEO_NAME, name);
+        return intent;
     }
 
 

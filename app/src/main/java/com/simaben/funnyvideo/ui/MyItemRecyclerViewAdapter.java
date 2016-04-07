@@ -29,7 +29,7 @@ public class MyItemRecyclerViewAdapter extends BaseRecyclerAdapter<ContentlistBe
 
     @Override
     public int getItemLayoutId(int viewType) {
-        return R.layout.fragment_item;
+        return R.layout.fragment_qiubai_item;
     }
 
     @Override

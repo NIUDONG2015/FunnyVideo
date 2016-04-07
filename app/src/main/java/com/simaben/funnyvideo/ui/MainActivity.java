@@ -7,6 +7,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.view.KeyEvent;
 
 import com.simaben.funnyvideo.R;
 import com.viewpagerindicator.CirclePageIndicator;
@@ -35,8 +36,8 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
     static {
         allFragments.clear();
         allFragments.add(new TitleTab(ItemFragment.newInstance(2), "糗百"));
-        allFragments.add(new TitleTab(ItemFragment.newInstance(1), "直播"));
-        allFragments.add(new TitleTab(ItemFragment.newInstance(1), "本地"));
+//        allFragments.add(new TitleTab(ItemFragment.newInstance(1), "直播"));
+        allFragments.add(new TitleTab(LocalFragment.newInstance(null), "本地"));
     }
 
     @Override
@@ -100,4 +101,16 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
         }
     }
 
+    @Override
+    public void onBackPressed() {
+        Fragment currentF = allFragments.get(viewPager.getCurrentItem()).f;
+        if (currentF instanceof BaseFragment) {
+            if (!((LocalFragment) currentF).onBackPressed()) {
+                super.onBackPressed();
+            }
+        } else {
+            super.onBackPressed();
+        }
+
+    }
 }

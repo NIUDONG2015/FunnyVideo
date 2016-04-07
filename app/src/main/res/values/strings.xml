@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">看个乐</string>
+    <string name="local_item_dir_count">%1$d个条目</string>
 </resources>
