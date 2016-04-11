@@ -16,31 +16,56 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="084db40d-e0a8-4bdb-9bfa-7718d8b65591" name="Default" comment="添加说明文件">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_view_headline_black.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tips_off.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tips_offed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/ClearEditText.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/HotFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/HotRecyclerViewAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/bean/OnlineChannel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/address_add_layout.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/assets/channel.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/clear_edittext_img.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_online_item.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_online_list.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libzxing/libzxing.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/menu/online_menu_layout.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/zxing.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/ItemFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/OnlineFragment.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/MyItemRecyclerViewAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/OnlineRecyclerViewAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/utils/FileUtil.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/utils/FileUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/utils/Util.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/utils/Util.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    <list default="true" id="084db40d-e0a8-4bdb-9bfa-7718d8b65591" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/raw/beep.ogg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libzxing/src/main/res/raw/beep.ogg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/qr_code_bg.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libzxing/src/main/res/drawable-xhdpi/qr_code_bg.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/scan_line.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libzxing/src/main/res/drawable-xhdpi/scan_line.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/shadow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libzxing/src/main/res/drawable-xhdpi/shadow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/libs/zxing.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libzxing/libs/zxing.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libzxing/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libzxing/src/main/AndroidManifest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libzxing/src/androidTest/java/com/xys/libzxing/ApplicationTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/xys/libzxing/zxing/camera/AutoFocusManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libzxing/src/main/java/com/xys/libzxing/zxing/camera/AutoFocusManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/xys/libzxing/zxing/utils/BeepManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libzxing/src/main/java/com/xys/libzxing/zxing/utils/BeepManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/xys/libzxing/zxing/camera/CameraConfigurationManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libzxing/src/main/java/com/xys/libzxing/zxing/camera/CameraConfigurationManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/xys/libzxing/zxing/camera/CameraManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libzxing/src/main/java/com/xys/libzxing/zxing/camera/CameraManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/xys/libzxing/zxing/activity/CaptureActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libzxing/src/main/java/com/xys/libzxing/zxing/activity/CaptureActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/xys/libzxing/zxing/utils/CaptureActivityHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libzxing/src/main/java/com/xys/libzxing/zxing/utils/CaptureActivityHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/xys/libzxing/zxing/decode/DecodeFormatManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libzxing/src/main/java/com/xys/libzxing/zxing/decode/DecodeFormatManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/xys/libzxing/zxing/decode/DecodeHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libzxing/src/main/java/com/xys/libzxing/zxing/decode/DecodeHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/xys/libzxing/zxing/decode/DecodeThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libzxing/src/main/java/com/xys/libzxing/zxing/decode/DecodeThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/xys/libzxing/zxing/encoding/EncodingUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libzxing/src/main/java/com/xys/libzxing/zxing/encoding/EncodingUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libzxing/src/test/java/com/xys/libzxing/ExampleUnitTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/xys/libzxing/zxing/utils/InactivityTimer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libzxing/src/main/java/com/xys/libzxing/zxing/utils/InactivityTimer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/xys/libzxing/zxing/camera/open/OpenCameraInterface.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libzxing/src/main/java/com/xys/libzxing/zxing/camera/open/OpenCameraInterface.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/xys/libzxing/zxing/camera/PreviewCallback.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libzxing/src/main/java/com/xys/libzxing/zxing/camera/PreviewCallback.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_capture.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libzxing/src/main/res/layout/activity_capture.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libzxing/build.gradle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/values/ids.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libzxing/src/main/res/values/ids.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libzxing/proguard-rules.pro" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libzxing/src/main/res/values-v11/styles.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libzxing/src/main/res/values-v14/styles.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libzxing/src/main/res/values/zxing_styles.xml" />
     </list>
     <ignored path="FunnyVideo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -5709,7 +5734,13 @@
       <option name="project" value="LOCAL" />
       <updated>1460023881276</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="添加流媒体播放">
+      <created>1460366976775</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1460366976775</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -5799,7 +5830,8 @@
     <MESSAGE value="添加本地文件列表" />
     <MESSAGE value="修改bug" />
     <MESSAGE value="添加说明文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加说明文件" />
+    <MESSAGE value="添加流媒体播放" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加流媒体播放" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
