@@ -62,10 +62,22 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:ellipsize="marquee"
-            android:singleLine="true"
             android:focusable="true"
             android:focusableInTouchMode="true"
+            android:singleLine="true"
             android:text="视频名称" />
+
+        <ImageView
+            android:id="@+id/mediacontroller_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/mediacontroller_screen_size"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@android:drawable/stat_sys_download_done"
+            android:visibility="invisible" />
 
         <ImageView
             android:id="@+id/mediacontroller_screen_size"
