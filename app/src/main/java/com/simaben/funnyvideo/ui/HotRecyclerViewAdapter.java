@@ -12,18 +12,18 @@ import com.simaben.funnyvideo.bean.QiubaiVideo.ShowapiResBodyBean.PagebeanBean.C
 
 import java.util.List;
 
-public class MyItemRecyclerViewAdapter extends BaseRecyclerAdapter<ContentlistBean>{
+public class HotRecyclerViewAdapter extends BaseRecyclerAdapter<ContentlistBean>{
 
 
-    public MyItemRecyclerViewAdapter(Context context, List<ContentlistBean> data) {
+    public HotRecyclerViewAdapter(Context context, List<ContentlistBean> data) {
         super(context, data);
     }
 
-    public MyItemRecyclerViewAdapter(Context context, List<ContentlistBean> data, boolean useAnimation) {
+    public HotRecyclerViewAdapter(Context context, List<ContentlistBean> data, boolean useAnimation) {
         super(context, data, useAnimation);
     }
 
-    public MyItemRecyclerViewAdapter(Context context, List<ContentlistBean> data, boolean useAnimation, RecyclerView.LayoutManager layoutManager) {
+    public HotRecyclerViewAdapter(Context context, List<ContentlistBean> data, boolean useAnimation, RecyclerView.LayoutManager layoutManager) {
         super(context, data, useAnimation, layoutManager);
     }
 
@@ -35,13 +35,14 @@ public class MyItemRecyclerViewAdapter extends BaseRecyclerAdapter<ContentlistBe
     @Override
     public void bindData(BaseRecyclerViewHolder holder, int position, ContentlistBean item) {
 
-        holder.getTextView(R.id.hit).setText("👍" + item.getLove());
-        holder.getTextView(R.id.hate).setText("👎" + item.getHate());
-        holder.getTextView(R.id.title).setText(item.getText());
+        holder.getTextView(R.id.hit).setText("👍" + item.getLove().trim());
+        holder.getTextView(R.id.hate).setText("👎" + item.getHate().trim());
+        holder.getTextView(R.id.title).setText(item.getText().trim());
         String imgUrl = "";
         if (TextUtils.isEmpty(imgUrl=item.getImage3())){
             imgUrl = item.getProfile_image();
         }
+        imgUrl = imgUrl.trim();
         holder.getImageView(R.id.video_img).setTag(imgUrl);
         ImageLoader.getInstance().displayImage(imgUrl, holder.getImageView(R.id.video_img));
     }

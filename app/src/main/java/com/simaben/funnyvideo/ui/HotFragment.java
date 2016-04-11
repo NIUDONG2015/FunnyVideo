@@ -2,14 +2,10 @@ package com.simaben.funnyvideo.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,28 +29,26 @@ import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Func1;
 import rx.schedulers.Schedulers;
 
-public class ItemFragment extends Fragment {
+public class HotFragment extends Fragment {
 
     // TODO: Customize parameter argument names
     private static final String ARG_COLUMN_COUNT = "column-count";
     // TODO: Customize parameters
-    private int mColumnCount = 1;
+    private int mColumnCount = 2;
 
-    private MyItemRecyclerViewAdapter adapter = null;
+    private HotRecyclerViewAdapter adapter = null;
     @Bind(R.id.recycler_view)
     public AutoLoadMoreRecyclerView mRecyclerView;
     @Bind(R.id.refresh_layout)
     public SwipeRefreshLayout mRefreshLayout;
     private int currentPage = 1;
 
-    public ItemFragment() {
+    public HotFragment() {
     }
 
     // TODO: Customize parameter initialization
-    public static ItemFragment newInstance(int columnCount) {
-        ItemFragment fragment = new ItemFragment();
-        Bundle args = new Bundle();
-        args.putInt(ARG_COLUMN_COUNT, columnCount);
+    public static HotFragment newInstance(Bundle args) {
+        HotFragment fragment = new HotFragment();
         fragment.setArguments(args);
         return fragment;
     }
@@ -86,15 +80,8 @@ public class ItemFragment extends Fragment {
 
 
     private void initAdapter(List data) {
-        RecyclerView.LayoutManager layoutManager = null;
-        if (mColumnCount == 1) {
-            layoutManager = new LinearLayoutManager(getActivity());
-        } else if (mColumnCount == -1) {
-            layoutManager = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
-        } else {
-            layoutManager = new GridLayoutManager(getActivity(), mColumnCount);
-        }
-        adapter = new MyItemRecyclerViewAdapter(getActivity(), data, false, layoutManager);
+        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getActivity(), mColumnCount);
+        adapter = new HotRecyclerViewAdapter(getActivity(), data, false, layoutManager);
         mRecyclerView.setAdapter(adapter);
         mRecyclerView.setAutoLayoutManager(layoutManager);
         mRecyclerView.addItemDecoration(new ItemDecorationAlbumColumns(getResources().getDimensionPixelSize(R.dimen.photos_list_spacing), mColumnCount));

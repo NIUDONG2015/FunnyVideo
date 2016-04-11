@@ -1,6 +1,12 @@
 package com.simaben.funnyvideo.utils;
 
+import android.app.Activity;
+import android.content.Context;
 import android.os.Environment;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 
 /**
  * Created by simaben on 7/4/16.
@@ -10,6 +16,7 @@ public class FileUtil {
     public static final boolean isSDCardExists() {
         return Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED);
     }
+
     private static final String BYTES = "Bytes";
     private static final String MEGABYTES = "MB";
     private static final String KILOBYTES = "kB";
@@ -18,15 +25,46 @@ public class FileUtil {
     private static final long MEGA = KILO * 1024;
     private static final long GIGA = MEGA * 1024;
 
-    public static String formatFileSize(final long pBytes){
-        if(pBytes < KILO){
+    public static String formatFileSize(final long pBytes) {
+        if (pBytes < KILO) {
             return pBytes + BYTES;
-        }else if(pBytes < MEGA){
-            return (int)(0.5 + (pBytes / (double)KILO)) + KILOBYTES;
-        }else if(pBytes < GIGA){
-            return (int)(0.5 + (pBytes / (double)MEGA)) + MEGABYTES;
-        }else {
-            return (int)(0.5 + (pBytes / (double)GIGA)) + GIGABYTES;
+        } else if (pBytes < MEGA) {
+            return (int) (0.5 + (pBytes / (double) KILO)) + KILOBYTES;
+        } else if (pBytes < GIGA) {
+            return (int) (0.5 + (pBytes / (double) MEGA)) + MEGABYTES;
+        } else {
+            return (int) (0.5 + (pBytes / (double) GIGA)) + GIGABYTES;
+        }
+    }
+
+    public static boolean fileExist(String path) {
+        try {
+            return new File(path).exists();
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    public static void appendAddress(String address, String name) {
+        File file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "tv.txt");
+        if (file != null && file.exists()) {
+            FileWriter writer = null;
+            try {
+                writer = new FileWriter(file,true);
+                writer.write("\n");
+                writer.write(name + "," + address);
+                writer.flush();
+            } catch (IOException e) {
+                e.printStackTrace();
+            } finally {
+                if (writer != null) {
+                    try {
+                        writer.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
         }
     }
 }

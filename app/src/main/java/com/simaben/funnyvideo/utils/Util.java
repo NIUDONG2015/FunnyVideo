@@ -4,11 +4,14 @@ import android.content.Context;
 import android.util.DisplayMetrics;
 import android.view.WindowManager;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  * Created by simaben on 7/4/16.
  */
 public class Util {
-
+    public static final SimpleDateFormat df7 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
     /**
      * 读取 显示度量
      */
@@ -33,4 +36,13 @@ public class Util {
         return getDisplayMetrics(context).heightPixels;
     }
 
+    public static String dateStr2formatWithSenconds() {
+        try {
+            Date date = new Date();
+            return df7.format(date.getTime());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 }

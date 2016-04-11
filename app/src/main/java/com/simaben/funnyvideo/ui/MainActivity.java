@@ -7,15 +7,10 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.view.KeyEvent;
+import android.view.MenuItem;
 
 import com.simaben.funnyvideo.R;
-import com.viewpagerindicator.CirclePageIndicator;
-import com.viewpagerindicator.IconPageIndicator;
-import com.viewpagerindicator.LinePageIndicator;
 import com.viewpagerindicator.TabPageIndicator;
-import com.viewpagerindicator.TitlePageIndicator;
-import com.viewpagerindicator.UnderlinePageIndicator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,8 +30,8 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
 
     static {
         allFragments.clear();
-        allFragments.add(new TitleTab(ItemFragment.newInstance(2), "糗百"));
-//        allFragments.add(new TitleTab(ItemFragment.newInstance(1), "直播"));
+        allFragments.add(new TitleTab(HotFragment.newInstance(null), "糗百"));
+        allFragments.add(new TitleTab(OnlineFragment.newInstance(null), "直播"));
         allFragments.add(new TitleTab(LocalFragment.newInstance(null), "本地"));
     }
 
@@ -53,6 +48,12 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
         indicator.setOnPageChangeListener(this);
 
 
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // TODO Auto-generated method stub
+        return false;
     }
 
     @Override
@@ -105,7 +106,7 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
     public void onBackPressed() {
         Fragment currentF = allFragments.get(viewPager.getCurrentItem()).f;
         if (currentF instanceof BaseFragment) {
-            if (!((LocalFragment) currentF).onBackPressed()) {
+            if (!((BaseFragment) currentF).onBackPressed()) {
                 super.onBackPressed();
             }
         } else {
