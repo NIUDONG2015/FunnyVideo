@@ -74,8 +74,8 @@ public class VideoPlayActivity extends Activity implements DownloadManagerListen
 
         Uri uri = getIntent().getData();
         if (uri!=null){
-            name = uri.getLastPathSegment();
-            path = uri.toString();
+            name = uri.getLastPathSegment().trim();
+            path = uri.toString().trim();
         }else{
             path = getIntent().getStringExtra(Constants.ARG_VIDEO_PATH);
             name = getIntent().getStringExtra(Constants.ARG_VIDEO_NAME);
@@ -125,13 +125,13 @@ public class VideoPlayActivity extends Activity implements DownloadManagerListen
     public void OnDownloadStarted(long taskId) {
         builder = new NotificationCompat.Builder(this);
         builder.setSmallIcon(R.mipmap.ic_launcher)
-                .setTicker(name)
+                .setTicker(name.trim())
                 .setWhen(System.currentTimeMillis())
-                .setDefaults(Notification.DEFAULT_ALL)
+                .setDefaults(Notification.DEFAULT_LIGHTS)
                 .setAutoCancel(true)
                 .setOngoing(true)
                 .setContentText("开始下载...")
-                .setContentTitle(name);
+                .setContentTitle(name.trim());
         Notification notification = builder.build();
         notification.vibrate = null;
         notification.sound = null;
@@ -145,13 +145,9 @@ public class VideoPlayActivity extends Activity implements DownloadManagerListen
 
     @Override
     public void onDownloadProcess(long taskId, double percent, long downloadedLength) {
-        Log.i("test", "taskId:" + taskId + "| percent:" + percent + "|downloadedLength:" + downloadedLength);
-//        int c = (int) (downloadedLength * 100 / percent);
         builder.setProgress(100, (int) percent, false);
         builder.setContentText((int) percent + "%");
         Notification notification = builder.build();
-        notification.vibrate = null;
-        notification.sound = null;
         mNotificationManager.notify((int) taskId, notification);
     }
 
@@ -173,7 +169,7 @@ public class VideoPlayActivity extends Activity implements DownloadManagerListen
     @Override
     public void OnDownloadCompleted(long taskId) {
         intentReuslt = new Intent();
-        intentReuslt.setType("application/mp4");
+//        intentReuslt.setType("application/mp4");
         intentReuslt.setAction(Intent.ACTION_VIEW);
         intentReuslt.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         Uri uri = Uri.fromFile(new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS),name + ".mp4"));
@@ -184,9 +180,8 @@ public class VideoPlayActivity extends Activity implements DownloadManagerListen
         builder.setContentIntent(pendingIntent);
 
         builder.setProgress(0, 0, false);
+        builder.setOngoing(false);
         Notification notification = builder.build();
-        notification.vibrate = null;
-        notification.sound = null;
         mNotificationManager.notify((int) taskId, notification);
     }
 
