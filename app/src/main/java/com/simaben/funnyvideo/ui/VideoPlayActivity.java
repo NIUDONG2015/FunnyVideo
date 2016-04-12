@@ -59,6 +59,7 @@ public class VideoPlayActivity extends Activity {
         if (uri != null) {
             name = uri.getLastPathSegment().trim();
             path = uri.toString().trim();
+            controller.setDonwloadView(false,null);
         } else {
             path = getIntent().getStringExtra(Constants.ARG_VIDEO_PATH);
             name = getIntent().getStringExtra(Constants.ARG_VIDEO_NAME);

@@ -105,11 +105,6 @@ public class HotFragment extends Fragment {
                 Intent intent = VideoPlayActivity.startSelf(view.getContext(), item.getVideo_uri(), item.getText());
                 startActivity(intent);
             }
-
-            @Override
-            public void onItemLongClick(View view, int position) {
-
-            }
         });
 
     }

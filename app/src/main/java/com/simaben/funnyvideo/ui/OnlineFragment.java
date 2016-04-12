@@ -181,11 +181,6 @@ public class OnlineFragment extends BaseFragment {
                 Intent intent = VideoPlayActivity.startSelf(view.getContext(), item.getAddress(), item.getTitle());
                 startActivity(intent);
             }
-
-            @Override
-            public void onItemLongClick(View view, int position) {
-                Toast.makeText(view.getContext(), "positon:" + position, Toast.LENGTH_SHORT).show();
-            }
         });
 
     }

@@ -16,6 +16,7 @@ import java.util.List;
  * Created by simaben on 7/4/16.
  */
 public class FileAdapter extends BaseRecyclerAdapter<File> {
+    private ArrayList<File> selectFiles = new ArrayList<>();
 
     private static ArrayList<String> endList = new ArrayList<>();
     static {
@@ -33,6 +34,14 @@ public class FileAdapter extends BaseRecyclerAdapter<File> {
         endList.add(".wmv");
         endList.add(".m4v");
     }
+    protected void addSelectFile(File file){
+        selectFiles.add(file);
+    }
+
+    protected void deleteSelectFile(File file){
+        selectFiles.remove(file);
+    }
+
 
     public FileAdapter(Context context, List<File> data) {
         super(context, data);
@@ -79,5 +88,15 @@ public class FileAdapter extends BaseRecyclerAdapter<File> {
                 }
             }
         }
+        holder.itemView.setSelected(selectFiles.contains(item));
+    }
+
+    public void clearSelelctList() {
+        selectFiles.clear();
+        notifyDataSetChanged();
+    }
+
+    public ArrayList<File> getSelectFiles() {
+        return selectFiles;
     }
 }

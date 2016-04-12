@@ -10,7 +10,6 @@ import android.view.View;
  * UpdateUser:<p>
  * UpdateDate:<p>
  */
-public interface OnItemClickListener {
-    void onItemClick(View view, int position);
-
+public interface OnItemLongClickListener {
+    boolean onItemLongClickListener(View view, int position);
 }

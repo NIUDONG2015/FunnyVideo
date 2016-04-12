@@ -29,7 +29,11 @@ public abstract class BaseRecyclerAdapter<T> extends RecyclerView.Adapter<BaseRe
     private RecyclerView.LayoutManager mLayoutManager;
     protected LayoutInflater mInflater;
     protected OnItemClickListener mClickListener;
+    protected OnItemLongClickListener onItemLongClick;
 
+    public void setOnItemLongClick(OnItemLongClickListener onItemLongClick) {
+        this.onItemLongClick = onItemLongClick;
+    }
 
     public BaseRecyclerAdapter(Context context, List<T> data) {
         this(context, data, true);
@@ -57,6 +61,16 @@ public abstract class BaseRecyclerAdapter<T> extends RecyclerView.Adapter<BaseRe
                 @Override
                 public void onClick(View v) {
                     mClickListener.onItemClick(v, holder.getLayoutPosition());
+                }
+            });
+        }
+
+        if (onItemLongClick!=null){
+            holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
+                @Override
+                public boolean onLongClick(View v) {
+
+                    return onItemLongClick.onItemLongClickListener(v,holder.getLayoutPosition());
                 }
             });
         }
