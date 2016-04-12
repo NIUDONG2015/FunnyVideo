@@ -54,7 +54,7 @@ public class FileAdapter extends BaseRecyclerAdapter<File> {
     @Override
     public void bindData(BaseRecyclerViewHolder holder, int position, File item) {
         if (item!=null){
-            holder.getTextView(R.id.title).setText(item.getName());
+            holder.getTextView(R.id.title).setText(item.getName().trim());
             if (item.isDirectory()){
                 holder.getImageView(R.id.video_img).setImageResource(R.mipmap.file_folder);
                 String sum = null;

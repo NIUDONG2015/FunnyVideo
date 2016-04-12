@@ -18,30 +18,14 @@ package com.simaben.funnyvideo.ui;
 
 
 import android.app.Activity;
-import android.app.Notification;
-import android.app.NotificationManager;
-import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.ActivityOptionsCompat;
-import android.support.v4.app.NotificationCompat;
-import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
 
-import com.golshadi.majid.core.DownloadManagerPro;
-import com.golshadi.majid.report.listener.DownloadManagerListener;
 import com.simaben.funnyvideo.R;
 import com.simaben.funnyvideo.common.Constants;
-import com.simaben.funnyvideo.utils.Util;
-
-import java.io.File;
-import java.io.IOException;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -50,17 +34,13 @@ import io.vov.vitamio.MediaPlayer;
 import io.vov.vitamio.widget.MediaController;
 import io.vov.vitamio.widget.VideoView;
 
-public class VideoPlayActivity extends Activity implements DownloadManagerListener {
-
-
-    private NotificationManager mNotificationManager;
-    private NotificationCompat.Builder builder;
-    private Intent intentReuslt;
+public class VideoPlayActivity extends Activity {
 
     @Bind(R.id.surface_view)
     public VideoView mVideoView;
     String name = "";
     String path = "";
+
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
@@ -72,33 +52,29 @@ public class VideoPlayActivity extends Activity implements DownloadManagerListen
         setContentView(R.layout.activity_videoview);
         ButterKnife.bind(this);
 
+
+
+        MediaController controller = new MediaController(this);
         Uri uri = getIntent().getData();
-        if (uri!=null){
+        if (uri != null) {
             name = uri.getLastPathSegment().trim();
             path = uri.toString().trim();
-        }else{
+        } else {
             path = getIntent().getStringExtra(Constants.ARG_VIDEO_PATH);
             name = getIntent().getStringExtra(Constants.ARG_VIDEO_NAME);
+            if (path.startsWith("http")) {
+                controller.setDonwloadView(true, new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(v.getContext(),DownloadService.class);
+                        intent.putExtras(getIntent().getExtras());
+                        startService(intent);
+                    }
+                });
+            }
         }
 
-        mNotificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         mVideoView.setVideoPath(path);
-        MediaController controller = new MediaController(this);
-        if (path.startsWith("http")) {
-            controller.setDonwloadView(true, new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    DownloadManagerPro dm = new DownloadManagerPro(v.getContext());
-                    dm.init("downloadManager/", 3, VideoPlayActivity.this);
-                    int token = dm.addTask(name + ".mp4", path, false, false);
-                    try {
-                        dm.startDownload(token);
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                }
-            });
-        }
         controller.setFileName(name);
         mVideoView.setMediaController(controller);
         mVideoView.requestFocus();
@@ -121,72 +97,5 @@ public class VideoPlayActivity extends Activity implements DownloadManagerListen
     }
 
 
-    @Override
-    public void OnDownloadStarted(long taskId) {
-        builder = new NotificationCompat.Builder(this);
-        builder.setSmallIcon(R.mipmap.ic_launcher)
-                .setTicker(name.trim())
-                .setWhen(System.currentTimeMillis())
-                .setDefaults(Notification.DEFAULT_LIGHTS)
-                .setAutoCancel(true)
-                .setOngoing(true)
-                .setContentText("开始下载...")
-                .setContentTitle(name.trim());
-        Notification notification = builder.build();
-        notification.vibrate = null;
-        notification.sound = null;
-        mNotificationManager.notify((int) taskId,notification );
-    }
 
-    @Override
-    public void OnDownloadPaused(long taskId) {
-
-    }
-
-    @Override
-    public void onDownloadProcess(long taskId, double percent, long downloadedLength) {
-        builder.setProgress(100, (int) percent, false);
-        builder.setContentText((int) percent + "%");
-        Notification notification = builder.build();
-        mNotificationManager.notify((int) taskId, notification);
-    }
-
-    @Override
-    public void OnDownloadFinished(long taskId) {
-
-    }
-
-    @Override
-    public void OnDownloadRebuildStart(long taskId) {
-
-    }
-
-    @Override
-    public void OnDownloadRebuildFinished(long taskId) {
-
-    }
-
-    @Override
-    public void OnDownloadCompleted(long taskId) {
-        intentReuslt = new Intent();
-//        intentReuslt.setType("application/mp4");
-        intentReuslt.setAction(Intent.ACTION_VIEW);
-        intentReuslt.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        Uri uri = Uri.fromFile(new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS),name + ".mp4"));
-        intentReuslt.setData(uri);
-
-        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intentReuslt, PendingIntent.FLAG_CANCEL_CURRENT);
-        builder.setContentText("已下载至:" + uri.toString());
-        builder.setContentIntent(pendingIntent);
-
-        builder.setProgress(0, 0, false);
-        builder.setOngoing(false);
-        Notification notification = builder.build();
-        mNotificationManager.notify((int) taskId, notification);
-    }
-
-    @Override
-    public void connectionLost(long taskId) {
-
-    }
 }

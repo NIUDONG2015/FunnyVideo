@@ -50,7 +50,7 @@ public class FileUtil {
         if (file != null && file.exists()) {
             FileWriter writer = null;
             try {
-                writer = new FileWriter(file,true);
+                writer = new FileWriter(file, true);
                 writer.write("\n");
                 writer.write(name + "," + address);
                 writer.flush();
@@ -66,5 +66,19 @@ public class FileUtil {
                 }
             }
         }
+    }
+
+    public static String getDownloadPath(Context ctx,String filename) {
+        if (isSDCardExists()) {
+            File downlaodPath = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), filename);
+            if (downlaodPath.exists()) return downlaodPath.getAbsolutePath();
+            try {
+                downlaodPath.createNewFile();
+                return downlaodPath.getAbsolutePath();
+            } catch (IOException e) {
+                return ctx.getCacheDir().getAbsolutePath();
+            }
+        }
+        return ctx.getCacheDir().getAbsolutePath();
     }
 }
