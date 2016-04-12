@@ -23,6 +23,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ProgressBar;
 
 import com.simaben.funnyvideo.R;
 import com.simaben.funnyvideo.common.Constants;
@@ -38,6 +39,9 @@ public class VideoPlayActivity extends Activity {
 
     @Bind(R.id.surface_view)
     public VideoView mVideoView;
+    @Bind(R.id.progressbar)
+    public ProgressBar progressbar;
+
     String name = "";
     String path = "";
 
@@ -53,13 +57,12 @@ public class VideoPlayActivity extends Activity {
         ButterKnife.bind(this);
 
 
-
         MediaController controller = new MediaController(this);
         Uri uri = getIntent().getData();
         if (uri != null) {
             name = uri.getLastPathSegment().trim();
             path = uri.toString().trim();
-            controller.setDonwloadView(false,null);
+            controller.setDonwloadView(false, null);
         } else {
             path = getIntent().getStringExtra(Constants.ARG_VIDEO_PATH);
             name = getIntent().getStringExtra(Constants.ARG_VIDEO_NAME);
@@ -67,7 +70,7 @@ public class VideoPlayActivity extends Activity {
                 controller.setDonwloadView(true, new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent(v.getContext(),DownloadService.class);
+                        Intent intent = new Intent(v.getContext(), DownloadService.class);
                         intent.putExtras(getIntent().getExtras());
                         startService(intent);
                     }
@@ -84,9 +87,17 @@ public class VideoPlayActivity extends Activity {
             @Override
             public void onPrepared(MediaPlayer mediaPlayer) {
                 mediaPlayer.setPlaybackSpeed(1.0f);
+
             }
         });
-
+        mVideoView.setOnBufferingUpdateListener(new MediaPlayer.OnBufferingUpdateListener() {
+            @Override
+            public void onBufferingUpdate(MediaPlayer mp, int percent) {
+                if (percent>98){
+                    progressbar.setVisibility(View.GONE);
+                }
+            }
+        });
 
     }
 
@@ -96,7 +107,6 @@ public class VideoPlayActivity extends Activity {
         intent.putExtra(Constants.ARG_VIDEO_NAME, name);
         return intent;
     }
-
 
 
 }

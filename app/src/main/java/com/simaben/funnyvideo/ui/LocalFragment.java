@@ -1,5 +1,7 @@
 package com.simaben.funnyvideo.ui;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Environment;
@@ -12,6 +14,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.simaben.autoswaprefresh.OnItemClickListener;
 import com.simaben.autoswaprefresh.OnItemLongClickListener;
@@ -30,6 +33,8 @@ import butterknife.Bind;
 import rx.Observable;
 import rx.Subscriber;
 import rx.android.schedulers.AndroidSchedulers;
+import rx.functions.Action1;
+import rx.functions.Func1;
 import rx.schedulers.Schedulers;
 
 /**
@@ -132,12 +137,10 @@ public class LocalFragment extends BaseFragment {
             switch (item.getItemId()) {
                 case R.id.local_menu_delete:
                     deleteFiles();
-                    mode.finish();
                     break;
                 default:
                     return false;
             }
-            fileAdapter.clearSelelctList();
             return true;
         }
 
@@ -150,17 +153,72 @@ public class LocalFragment extends BaseFragment {
     };
 
     private void deleteFiles() {
-        Log.i("test", "fileAdapter.getSelectFiles().size():" + fileAdapter.getSelectFiles().size());
+        new AlertDialog.Builder(mAct).setTitle("删除文件").setMessage("确认删除？").setPositiveButton("确定", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+
+                Observable.create(new Observable.OnSubscribe<ArrayList<File>>() {
+                    @Override
+                    public void call(Subscriber<? super ArrayList<File>> subscriber) {
+                        subscriber.onStart();
+                        subscriber.onNext(fileAdapter.getSelectFiles());
+                        subscriber.onCompleted();
+                    }
+                }).subscribeOn(Schedulers.io())
+                        .observeOn(AndroidSchedulers.mainThread())
+                        .flatMap(new Func1<ArrayList<File>, Observable<File>>() {
+                            @Override
+                            public Observable<File> call(ArrayList<File> files) {
+                                return Observable.from(files);
+                            }
+                        })
+                        .subscribe(new Subscriber<File>() {
+                            @Override
+                            public void onCompleted() {
+                                mActionModeCallback.onDestroyActionMode(null);
+                                refreshFile(currentDir);
+                            }
+
+                            @Override
+                            public void onError(Throwable e) {
+                                Toast.makeText(mAct, "删除文件失败", Toast.LENGTH_SHORT).show();
+                                mActionModeCallback.onDestroyActionMode(null);
+                            }
+
+                            @Override
+                            public void onNext(File file) {
+                                deleteDir(file);
+                            }
+                        });
+
+
+            }
+        }).setNegativeButton("取消", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+                mActionModeCallback.onDestroyActionMode(null);
+            }
+        }).create().show();
     }
 
     @Override
     protected void loadData() {
+        rootPath = Environment.getExternalStorageDirectory().getParentFile().getAbsolutePath();
+        refreshFile(null);
+    }
+
+    private void refreshFile(final File file) {
         Observable.create(new Observable.OnSubscribe<File>() {
             @Override
             public void call(Subscriber<? super File> subscriber) {
                 if (FileUtil.isSDCardExists()) {
-                    rootPath = Environment.getExternalStorageDirectory().getParentFile().getAbsolutePath();
-                    subscriber.onNext(Environment.getExternalStorageDirectory());
+                    if (file == null) {
+                        subscriber.onNext(Environment.getExternalStorageDirectory().getParentFile());
+                    } else {
+                        subscriber.onNext(file);
+                    }
                 } else {
                     subscriber.onError(new SDCardNotFoundException());
                 }
@@ -236,4 +294,17 @@ public class LocalFragment extends BaseFragment {
         emptyView.setVisibility(showEmpty ? View.VISIBLE : View.GONE);
     }
 
+    public static boolean deleteDir(File dir) {
+        if (dir.isDirectory()) {
+            String[] children = dir.list();
+            for (int i = 0; i < children.length; i++) {
+                boolean success = deleteDir(new File(dir, children[i]));
+                if (!success) {
+                    return false;
+                }
+            }
+        }
+
+        return dir.delete(); // The directory is empty now and can be deleted.
+    }
 }

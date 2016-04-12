@@ -116,6 +116,10 @@ public abstract class BaseRecyclerAdapter<T> extends RecyclerView.Adapter<BaseRe
         notifyItemRemoved(pos);
     }
 
+    public void delete(T data) {
+        mData.remove(data);
+    }
+
     public void addMoreData(List<T> data) {
         int startPos = mData.size();
         mData.addAll(data);
