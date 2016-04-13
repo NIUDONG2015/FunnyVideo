@@ -1,10 +1,11 @@
 package com.simaben.funnyvideo.ui;
 
 import android.content.Context;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 
-import com.nostra13.universalimageloader.core.ImageLoader;
+import com.lidroid.xutils.BitmapUtils;
 import com.simaben.autoswaprefresh.BaseRecyclerAdapter;
 import com.simaben.autoswaprefresh.BaseRecyclerViewHolder;
 import com.simaben.funnyvideo.R;
@@ -14,17 +15,18 @@ import java.util.List;
 
 public class HotRecyclerViewAdapter extends BaseRecyclerAdapter<ContentlistBean>{
 
-
+    BitmapUtils bitmapUtils = null;
     public HotRecyclerViewAdapter(Context context, List<ContentlistBean> data) {
-        super(context, data);
+        this(context, data, true);
     }
 
     public HotRecyclerViewAdapter(Context context, List<ContentlistBean> data, boolean useAnimation) {
-        super(context, data, useAnimation);
+        this(context, data, useAnimation, new LinearLayoutManager(context));
     }
 
     public HotRecyclerViewAdapter(Context context, List<ContentlistBean> data, boolean useAnimation, RecyclerView.LayoutManager layoutManager) {
         super(context, data, useAnimation, layoutManager);
+        bitmapUtils = new BitmapUtils(context);
     }
 
     @Override
@@ -44,6 +46,6 @@ public class HotRecyclerViewAdapter extends BaseRecyclerAdapter<ContentlistBean>
         }
         imgUrl = imgUrl.trim();
         holder.getImageView(R.id.video_img).setTag(imgUrl);
-        ImageLoader.getInstance().displayImage(imgUrl, holder.getImageView(R.id.video_img));
+        bitmapUtils.display(holder.getImageView(R.id.video_img), imgUrl);
     }
 }
