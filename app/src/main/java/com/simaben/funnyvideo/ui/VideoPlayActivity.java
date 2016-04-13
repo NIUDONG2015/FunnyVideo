@@ -93,12 +93,18 @@ public class VideoPlayActivity extends Activity {
         mVideoView.setOnBufferingUpdateListener(new MediaPlayer.OnBufferingUpdateListener() {
             @Override
             public void onBufferingUpdate(MediaPlayer mp, int percent) {
-                if (percent>98){
+                if (percent > 98) {
                     progressbar.setVisibility(View.GONE);
                 }
             }
         });
-
+        mVideoView.setOnErrorListener(new MediaPlayer.OnErrorListener() {
+            @Override
+            public boolean onError(MediaPlayer mp, int what, int extra) {
+                finish();
+                return false;
+            }
+        });
     }
 
     public static Intent startSelf(Context ctx, String path, String name) {

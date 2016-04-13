@@ -16,7 +16,6 @@ import com.simaben.funnyvideo.R;
 public class ShowApplication extends Application {
     public static ShowApplication application = null;
 
-
     @Override
     public void onCreate() {
         super.onCreate();
@@ -37,6 +36,10 @@ public class ShowApplication extends Application {
 
         ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(this).defaultDisplayImageOptions(options).build();
         ImageLoader.getInstance().init(config);
+
+
+        CrashHandler crashHandler = CrashHandler.getInstance();
+        crashHandler.init(getApplicationContext());
 
     }
 

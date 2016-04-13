@@ -18,10 +18,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="084db40d-e0a8-4bdb-9bfa-7718d8b65591" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/autoswaprefresh/src/main/java/com/simaben/autoswaprefresh/BaseRecyclerAdapter.java" afterPath="$PROJECT_DIR$/autoswaprefresh/src/main/java/com/simaben/autoswaprefresh/BaseRecyclerAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/common/CrashHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/presenter/HotPresenterImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/presenter/IHotFragmentView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/presenter/IHotPresenter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/presenter/ILocalFragmentView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/presenter/ILocalPresenter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/presenter/LocalPresenterImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/utils/FileUtil.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/utils/FileUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/HotFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/HotFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/LocalFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/LocalFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/common/ShowApplication.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/common/ShowApplication.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/VideoPlayActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/VideoPlayActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_videoview.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_videoview.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="FunnyVideo.iws" />
@@ -50,40 +58,117 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FileAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/FileAdapter.java">
+      <file leaf-file-name="HotFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/HotFragment.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding>
-                <element signature="e#1090#1091#0" expanded="true" />
+                <element signature="e#1731#1732#0" expanded="true" />
+                <element signature="e#1783#1784#0" expanded="true" />
+                <element signature="e#1953#1954#0" expanded="true" />
+                <element signature="e#1992#1993#0" expanded="true" />
+                <element signature="e#2817#2818#0" expanded="true" />
+                <element signature="e#2865#2866#0" expanded="true" />
+                <element signature="e#2928#2929#0" expanded="true" />
+                <element signature="e#2965#2966#0" expanded="true" />
+                <element signature="e#3032#3033#0" expanded="true" />
+                <element signature="e#3073#3074#0" expanded="true" />
+                <element signature="e#3117#3118#0" expanded="true" />
+                <element signature="e#3157#3158#0" expanded="true" />
+                <element signature="e#3202#3203#0" expanded="true" />
+                <element signature="e#3241#3242#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LocalFragment.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LocalFragment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/LocalFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.10967742">
-              <caret line="139" column="26" selection-start-line="139" selection-start-column="26" selection-end-line="139" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
               <folding>
-                <element signature="e#1784#1785#0" expanded="true" />
-                <element signature="e#1835#1836#0" expanded="true" />
-                <element signature="e#5286#7132#0" expanded="true" />
-                <element signature="e#5486#5859#0" expanded="true" />
-                <element signature="e#5858#5859#0" expanded="true" />
-                <element signature="e#5990#6277#0" expanded="true" />
-                <element signature="e#6276#6277#0" expanded="true" />
-                <element signature="e#6998#6999#0" expanded="true" />
-                <element signature="e#7077#7078#0" expanded="true" />
-                <element signature="e#7131#7132#0" expanded="true" />
-                <element signature="e#7158#7409#0" expanded="true" />
-                <element signature="e#7408#7409#0" expanded="true" />
-                <element signature="e#7685#8240#0" expanded="true" />
-                <element signature="e#8239#8240#0" expanded="true" />
-                <element signature="e#9694#9960#0" expanded="true" />
-                <element signature="e#9959#9960#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2081#2082#0" expanded="true" />
+                <element signature="e#2135#2136#0" expanded="true" />
+                <element signature="e#2611#2612#0" expanded="true" />
+                <element signature="e#2655#2656#0" expanded="true" />
+                <element signature="e#3027#3028#0" expanded="true" />
+                <element signature="e#3069#3070#0" expanded="true" />
+                <element signature="e#3267#3268#0" expanded="true" />
+                <element signature="e#3319#3320#0" expanded="true" />
+                <element signature="e#3374#3375#0" expanded="true" />
+                <element signature="e#3447#3448#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VideoPlayActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/VideoPlayActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8029851">
+              <caret line="103" column="25" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#3834#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2172#2524#0" expanded="true" />
+                <element signature="e#2523#2524#0" expanded="true" />
+                <element signature="e#2757#2956#0" expanded="true" />
+                <element signature="e#2955#2956#0" expanded="true" />
+                <element signature="e#3007#3283#0" expanded="true" />
+                <element signature="e#3282#3283#0" expanded="true" />
+                <element signature="e#3324#3535#0" expanded="true" />
+                <element signature="e#3534#3535#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ILocalFragmentView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/presenter/ILocalFragmentView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ILocalPresenter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/presenter/ILocalPresenter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LocalPresenterImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/presenter/LocalPresenterImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.814815">
+              <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2889#4733#0" expanded="true" />
+                <element signature="e#3089#3469#0" expanded="true" />
+                <element signature="e#3468#3469#0" expanded="true" />
+                <element signature="e#3600#3887#0" expanded="true" />
+                <element signature="e#3886#3887#0" expanded="true" />
+                <element signature="e#4732#4733#0" expanded="true" />
+                <element signature="e#4759#5010#0" expanded="true" />
+                <element signature="e#5009#5010#0" expanded="true" />
+                <element signature="e#8458#8618#0" expanded="true" />
+                <element signature="e#8617#8618#0" expanded="true" />
+                <element signature="e#8689#8955#0" expanded="true" />
+                <element signature="e#8954#8955#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,7 +178,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/utils/FileUtil.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+              <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,106 +186,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Environment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/devTools/android-sdk-macosx/sources/android-23/android/os/Environment.java">
+      <file leaf-file-name="HotPresenterImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/presenter/HotPresenterImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="334" column="23" selection-start-line="334" selection-start-column="23" selection-end-line="334" selection-end-column="23" />
+              <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
               <folding>
-                <element signature="e#0#29273#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-                <element signature="e#2862#2863#0" expanded="false" />
-                <element signature="e#2902#2903#0" expanded="false" />
-                <element signature="e#3369#3370#0" expanded="false" />
-                <element signature="e#3420#3421#0" expanded="false" />
-                <element signature="e#5080#5081#0" expanded="false" />
-                <element signature="e#5119#5120#0" expanded="false" />
-                <element signature="e#5186#5187#0" expanded="false" />
-                <element signature="e#5228#5229#0" expanded="false" />
-                <element signature="e#5451#5452#0" expanded="false" />
-                <element signature="e#5486#5487#0" expanded="false" />
-                <element signature="e#5732#5733#0" expanded="false" />
-                <element signature="e#5770#5771#0" expanded="false" />
-                <element signature="e#8526#8527#0" expanded="false" />
-                <element signature="e#8563#8564#0" expanded="false" />
-                <element signature="e#20614#20615#0" expanded="false" />
-                <element signature="e#20661#20662#0" expanded="false" />
-                <element signature="e#23854#23855#0" expanded="false" />
-                <element signature="e#23906#23907#0" expanded="false" />
-                <element signature="e#27451#27452#0" expanded="false" />
-                <element signature="e#27495#27496#0" expanded="false" />
+                <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RecyclerView.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/Downloads/devTools/android-sdk-macosx/extras/android/m2repository/com/android/support/recyclerview-v7/23.1.1/recyclerview-v7-23.1.1-sources.jar!/android/support/v7/widget/RecyclerView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5651" column="26" selection-start-line="5651" selection-start-column="26" selection-end-line="5651" selection-end-column="26" />
-              <folding>
-                <element signature="e#232408#232409#0" expanded="true" />
-                <element signature="e#232459#232460#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseRecyclerAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/autoswaprefresh/src/main/java/com/simaben/autoswaprefresh/BaseRecyclerAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="131" column="5" selection-start-line="131" selection-start-column="5" selection-end-line="131" selection-end-column="5" />
-              <folding>
-                <element signature="e#3916#3917#0" expanded="true" />
-                <element signature="e#3950#3951#0" expanded="true" />
-                <element signature="e#4155#4156#0" expanded="true" />
-                <element signature="e#4183#4184#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActionMode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/devTools/android-sdk-macosx/sources/android-23/android/view/ActionMode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="337" column="20" selection-start-line="337" selection-start-column="20" selection-end-line="337" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="File.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/devTools/android-sdk-macosx/sources/android-23/java/io/File.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="332" column="16" selection-start-line="332" selection-start-column="16" selection-end-line="332" selection-end-column="16" />
-              <folding>
-                <element signature="e#12245#12246#0" expanded="true" />
-                <element signature="e#12314#12315#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HotFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/HotFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="127" column="40" selection-start-line="127" selection-start-column="40" selection-end-line="127" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SwipeRefreshLayout.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/Downloads/devTools/android-sdk-macosx/extras/android/m2repository/com/android/support/support-v4/23.1.1/support-v4-23.1.1-sources.jar!/android/support/v4/widget/SwipeRefreshLayout.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="360" column="16" selection-start-line="360" selection-start-column="16" selection-end-line="360" selection-end-column="16" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -211,8 +204,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="layoutResourceFile_vertical" />
-        <option value="Class" />
         <option value="resourceFile" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -5050,22 +5044,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/viewpagerindicatorlibrary/src/main/res/values/vpi__colors.xml" />
-        <option value="$PROJECT_DIR$/viewpagerindicatorlibrary/src/main/res/color/vpi__dark_theme.xml" />
-        <option value="$PROJECT_DIR$/vitamio-lib/src/io/vov/vitamio/widget/VideoView.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/bean/SDCardNotFoundException.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_local_list.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/BaseFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/ItemFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_online_list.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/HotRecyclerViewAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/online_menu_layout.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/bean/OnlineChannel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/OnlineRecyclerViewAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_online_item.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/assets/channel.txt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/ClearEditText.java" />
         <option value="$PROJECT_DIR$/libzxing/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/MainActivity.java" />
@@ -5086,7 +5064,6 @@
         <option value="$PROJECT_DIR$/vitamio-lib/src/io/vov/vitamio/widget/MediaController.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/golshadi/majid/core/DownloadManagerPro.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/utils/FileUtil.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/DownloadService.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/context_menu.xml" />
         <option value="$PROJECT_DIR$/autoswaprefresh/src/main/java/com/simaben/autoswaprefresh/OnItemClickListener.java" />
@@ -5097,10 +5074,27 @@
         <option value="$PROJECT_DIR$/autoswaprefresh/src/main/java/com/simaben/autoswaprefresh/OnItemLongClickListener.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/FileAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_videoview.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/VideoPlayActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/HotFragment.java" />
         <option value="$PROJECT_DIR$/autoswaprefresh/src/main/java/com/simaben/autoswaprefresh/BaseRecyclerAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/presenter/IHotFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/presenter/HotFragmentView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/presenter/HotPresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/presenter/HotPresenterImpl.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/presenter/IRecyclerView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/presenter/IHotPresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/presenter/RecyclerViewImpl.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/IHotFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/presenter/IHotFragmentView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/presenter/IHotPresenterImpl.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/HotFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/utils/FileUtil.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/presenter/ILocalPresenterImpl.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/presenter/ILocalPresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/common/CrashHandler.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/common/ShowApplication.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/presenter/LocalPresenterImpl.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/presenter/ILocalFragmentView.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/LocalFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/VideoPlayActivity.java" />
       </list>
     </option>
   </component>
@@ -5118,10 +5112,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="158" />
-    <option name="y" value="28" />
-    <option name="width" value="989" />
-    <option name="height" value="728" />
+    <option name="x" value="25" />
+    <option name="y" value="23" />
+    <option name="width" value="1186" />
+    <option name="height" value="773" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -5175,7 +5169,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vitamio-lib" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -5189,109 +5183,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vitamio-lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="x86" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FunnyVideo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FunnyVideo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vitamio-lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mips" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FunnyVideo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FunnyVideo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vitamio-lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="armeabi-v7a" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FunnyVideo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FunnyVideo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vitamio-lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="armeabi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FunnyVideo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FunnyVideo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autoswaprefresh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FunnyVideo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FunnyVideo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autoswaprefresh" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -5309,7 +5201,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="autoswaprefresh" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -5331,7 +5223,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="autoswaprefresh" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -5347,61 +5239,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="autoswaprefresh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FunnyVideo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FunnyVideo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FunnyVideo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FunnyVideo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FunnyVideo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FunnyVideo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="com" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -5427,7 +5265,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="funnyvideo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -5453,11 +5299,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="menu" />
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="funnyvideo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -5483,11 +5337,95 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="drawable" />
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="funnyvideo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="retrofit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FunnyVideo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FunnyVideo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="funnyvideo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="presenter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FunnyVideo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FunnyVideo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="funnyvideo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -5556,7 +5494,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="show.do.not.copy.http.proxy.settings.to.gradle" value="true" />
     <property name="recentsLimit" value="5" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="fef0c413" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="6O5614A32882" />
     <property name="DEBUGGABLE_DEVICE" value="samsung-sm_n9108v-fef0c413" />
     <property name="DEBUGGABLE_PROCESS" value="com.simaben.funnyvideo" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
@@ -5564,14 +5502,17 @@
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="Loca&#9;FILE&#9;file:///Users/simaben/Developer/FunnyVideo/app/src/main/java/com/simaben/funnyvideo/ui/LocalFragment.java&#10;Hot&#9;FILE&#9;file:///Users/simaben/Developer/FunnyVideo/app/src/main/java/com/simaben/funnyvideo/ui/HotFragment.java&#10;Vip&#9;FILE&#9;file:///Users/simaben/Developer/FunnyVideo/app/src/main/java/com/simaben/funnyvideo/ui/VideoPlayActivity.java&#10;Local&#9;FILE&#9;file:///Users/simaben/Developer/FunnyVideo/app/src/main/java/com/simaben/funnyvideo/ui/LocalFragment.java&#10;Videp&#9;PSI&#9;JAVA://com.simaben.funnyvideo.ui.VideoPlayActivity&#10;Vide&#9;PSI&#9;JAVA://com.simaben.funnyvideo.ui.VideoPlayActivity&#10;Fileu&#9;PSI&#9;JAVA://com.simaben.funnyvideo.utils.FileUtil&#10;ONLINEF&#9;FILE&#9;file:///Users/simaben/Developer/FunnyVideo/app/src/main/java/com/simaben/funnyvideo/ui/OnlineFragment.java&#10;activity_capture&#9;FILE&#9;file:///Users/simaben/Developer/FunnyVideo/libzxing/src/main/res/layout/activity_capture.xml&#10;Video&#9;FILE&#9;file:///Users/simaben/Developer/FunnyVideo/app/src/main/java/com/simaben/funnyvideo/ui/VideoPlayActivity.java&#10;iTEF&#9;PSI&#9;JAVA://com.simaben.funnyvideo.ui.ItemFragment&#10;Main&#9;FILE&#9;file:///Users/simaben/Developer/FunnyVideo/app/src/main/java/com/simaben/funnyvideo/ui/MainActivity.java" />
+    <property name="SearchEverywhereHistoryKey" value="Vide&#9;FILE&#9;file:///Users/simaben/Developer/FunnyVideo/app/src/main/java/com/simaben/funnyvideo/ui/VideoPlayActivity.java&#10;FileU&#9;FILE&#9;file:///Users/simaben/Developer/FunnyVideo/app/src/main/java/com/simaben/funnyvideo/utils/FileUtil.java&#10;Loca&#9;FILE&#9;file:///Users/simaben/Developer/FunnyVideo/app/src/main/java/com/simaben/funnyvideo/ui/LocalFragment.java&#10;Hot&#9;FILE&#9;file:///Users/simaben/Developer/FunnyVideo/app/src/main/java/com/simaben/funnyvideo/ui/HotFragment.java&#10;Vip&#9;FILE&#9;file:///Users/simaben/Developer/FunnyVideo/app/src/main/java/com/simaben/funnyvideo/ui/VideoPlayActivity.java&#10;Local&#9;FILE&#9;file:///Users/simaben/Developer/FunnyVideo/app/src/main/java/com/simaben/funnyvideo/ui/LocalFragment.java&#10;Videp&#9;PSI&#9;JAVA://com.simaben.funnyvideo.ui.VideoPlayActivity&#10;Fileu&#9;PSI&#9;JAVA://com.simaben.funnyvideo.utils.FileUtil&#10;ONLINEF&#9;FILE&#9;file:///Users/simaben/Developer/FunnyVideo/app/src/main/java/com/simaben/funnyvideo/ui/OnlineFragment.java&#10;activity_capture&#9;FILE&#9;file:///Users/simaben/Developer/FunnyVideo/libzxing/src/main/res/layout/activity_capture.xml&#10;Video&#9;FILE&#9;file:///Users/simaben/Developer/FunnyVideo/app/src/main/java/com/simaben/funnyvideo/ui/VideoPlayActivity.java&#10;iTEF&#9;PSI&#9;JAVA://com.simaben.funnyvideo.ui.ItemFragment&#10;Main&#9;FILE&#9;file:///Users/simaben/Developer/FunnyVideo/app/src/main/java/com/simaben/funnyvideo/ui/MainActivity.java" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.SHOW" value="false" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteToolWindowManager.SHOW" value="false" />
     <property name="FullScreen" value="false" />
     <property name="extract.method.default.visibility" value="private" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Galaxy_Nexus_API_N" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.simaben.funnyvideo.common" />
+      <recent name="com.simaben.funnyvideo.presenter" />
       <recent name="com.simaben.autoswaprefresh" />
       <recent name="com.simaben.funnyvideo.ui" />
     </key>
@@ -5866,33 +5807,39 @@
       <option name="project" value="LOCAL" />
       <updated>1460449542731</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="添加本地文件删除功能">
+      <created>1460452546973</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1460452546973</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="158" y="28" width="989" height="728" extended-state="6" />
+    <frame x="25" y="23" width="1186" height="773" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44771242" sideWeight="0.49664992" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44748858" sideWeight="0.49664992" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39816234" sideWeight="0.5033501" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39726028" sideWeight="0.5033501" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3267974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="simpleUML" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284055" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26715946" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21503496" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2630719" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329806" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3251634" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32267883" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24613686" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24019608" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23896499" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30718955" sideWeight="0.35343385" order="7" side_tool="false" content_ui="tabs" />
@@ -5908,7 +5855,7 @@
     <layout-to-restore>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41993463" sideWeight="0.49664992" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44748858" sideWeight="0.49664992" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3267974" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39816234" sideWeight="0.5033501" order="10" side_tool="true" content_ui="tabs" />
@@ -5917,7 +5864,7 @@
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26715946" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3339161" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -5933,7 +5880,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30718955" sideWeight="0.35343385" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24920802" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329806" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -5962,7 +5909,8 @@
     <MESSAGE value="修改通知栏bug" />
     <MESSAGE value="修改文件下载方式，使用xutils下载" />
     <MESSAGE value="添加SD卡目录多选模式，但是并未添加真正的删除功能。" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加SD卡目录多选模式，但是并未添加真正的删除功能。" />
+    <MESSAGE value="添加本地文件删除功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加本地文件删除功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -5993,7 +5941,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/utils/FileUtil.java</url>
-          <line>71</line>
+          <line>70</line>
           <properties />
           <option name="timeStamp" value="16" />
         </line-breakpoint>
@@ -6034,159 +5982,41 @@
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/LocalFragment.java</url>
-          <line>164</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/common/CrashHandler.java</url>
+          <line>146</line>
           <properties />
-          <option name="timeStamp" value="36" />
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/LocalFragment.java</url>
-          <line>138</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/common/CrashHandler.java</url>
+          <line>115</line>
           <properties />
-          <option name="timeStamp" value="42" />
+          <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/LocalFragment.java</url>
-          <line>184</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/common/CrashHandler.java</url>
+          <line>90</line>
           <properties />
-          <option name="timeStamp" value="44" />
+          <option name="timeStamp" value="51" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/LocalFragment.java</url>
-          <line>178</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/common/CrashHandler.java</url>
+          <line>68</line>
           <properties />
-          <option name="timeStamp" value="45" />
+          <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/LocalFragment.java</url>
-          <line>190</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/common/CrashHandler.java</url>
+          <line>192</line>
           <properties />
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/LocalFragment.java</url>
-          <line>169</line>
-          <properties />
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/LocalFragment.java</url>
-          <line>307</line>
-          <properties />
-          <option name="timeStamp" value="48" />
+          <option name="timeStamp" value="54" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="49" />
+      <option name="time" value="55" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.8888888">
-          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screen/2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screen/1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screen/3.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screen/6.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/devTools/android-sdk-macosx/platforms/android-23/data/res/drawable/stat_sys_download.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/devTools/android-sdk-macosx/sources/android-23/android/widget/ImageView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="73" column="13" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#50970#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#4625#4626#0" expanded="false" />
-            <element signature="e#4664#4665#0" expanded="false" />
-            <element signature="e#9782#9783#0" expanded="false" />
-            <element signature="e#9822#9823#0" expanded="false" />
-            <element signature="e#11108#11109#0" expanded="false" />
-            <element signature="e#11140#11141#0" expanded="false" />
-            <element signature="e#12166#12167#0" expanded="false" />
-            <element signature="e#12202#12203#0" expanded="false" />
-            <element signature="e#12447#12448#0" expanded="false" />
-            <element signature="e#12480#12481#0" expanded="false" />
-            <element signature="e#13513#13514#0" expanded="false" />
-            <element signature="e#13551#13552#0" expanded="false" />
-            <element signature="e#18536#18537#0" expanded="false" />
-            <element signature="e#18576#18577#0" expanded="false" />
-            <element signature="e#19502#19503#0" expanded="false" />
-            <element signature="e#19542#19543#0" expanded="false" />
-            <element signature="e#20340#20341#0" expanded="false" />
-            <element signature="e#20382#20383#0" expanded="false" />
-            <element signature="e#20448#20449#0" expanded="false" />
-            <element signature="e#20495#20496#0" expanded="false" />
-            <element signature="e#24220#24221#0" expanded="false" />
-            <element signature="e#24258#24259#0" expanded="false" />
-            <element signature="e#25129#25130#0" expanded="false" />
-            <element signature="e#25162#25163#0" expanded="false" />
-            <element signature="e#26731#26732#0" expanded="false" />
-            <element signature="e#26768#26769#0" expanded="false" />
-            <element signature="e#45293#45294#0" expanded="false" />
-            <element signature="e#45336#45337#0" expanded="false" />
-            <element signature="e#46050#46051#0" expanded="false" />
-            <element signature="e#46113#46114#0" expanded="false" />
-            <element signature="e#46157#46158#0" expanded="false" />
-            <element signature="e#46193#46194#0" expanded="false" />
-            <element signature="e#46721#46722#0" expanded="false" />
-            <element signature="e#46756#46757#0" expanded="false" />
-            <element signature="e#47433#47434#0" expanded="false" />
-            <element signature="e#47462#47463#0" expanded="false" />
-            <element signature="e#47727#47728#0" expanded="false" />
-            <element signature="e#47758#47759#0" expanded="false" />
-            <element signature="e#50702#50703#0" expanded="false" />
-            <element signature="e#50750#50751#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vitamio-lib/res/layout/mediacontroller.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.931034">
-          <caret line="78" column="66" selection-start-line="78" selection-start-column="66" selection-end-line="78" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vitamio-lib/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/assets/channel.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -6458,17 +6288,6 @@
             <element signature="e#279430#279431#0" expanded="false" />
             <element signature="e#279842#279843#0" expanded="false" />
             <element signature="e#279903#279904#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/OnlineFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48630136">
-          <caret line="241" column="26" selection-start-line="241" selection-start-column="26" selection-end-line="241" selection-end-column="26" />
-          <folding>
-            <element signature="e#6727#7088#0" expanded="true" />
-            <element signature="e#7087#7088#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -7007,14 +6826,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/BaseFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.04587156">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_videoview.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -7045,33 +6856,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/VideoPlayActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="69" column="49" selection-start-line="69" selection-start-column="49" selection-end-line="69" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#3580#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#2757#2956#0" expanded="true" />
-            <element signature="e#2955#2956#0" expanded="true" />
-            <element signature="e#3007#3280#0" expanded="true" />
-            <element signature="e#3279#3280#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Downloads/devTools/android-sdk-macosx/extras/android/m2repository/com/android/support/support-v4/23.1.1/support-v4-23.1.1-sources.jar!/android/support/v4/widget/SwipeRefreshLayout.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="360" column="16" selection-start-line="360" selection-start-column="16" selection-end-line="360" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/HotFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="127" column="40" selection-start-line="127" selection-start-column="40" selection-end-line="127" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -7081,8 +6869,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="332" column="16" selection-start-line="332" selection-start-column="16" selection-end-line="332" selection-end-column="16" />
           <folding>
-            <element signature="e#12245#12246#0" expanded="true" />
-            <element signature="e#12314#12315#0" expanded="true" />
+            <element signature="e#12245#12246#0" expanded="false" />
+            <element signature="e#12314#12315#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -7102,8 +6890,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="5651" column="26" selection-start-line="5651" selection-start-column="26" selection-end-line="5651" selection-end-column="26" />
           <folding>
-            <element signature="e#232408#232409#0" expanded="true" />
-            <element signature="e#232459#232460#0" expanded="true" />
+            <element signature="e#232408#232409#0" expanded="false" />
+            <element signature="e#232459#232460#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -7113,17 +6901,25 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="131" column="5" selection-start-line="131" selection-start-column="5" selection-end-line="131" selection-end-column="5" />
           <folding>
-            <element signature="e#3916#3917#0" expanded="true" />
-            <element signature="e#3950#3951#0" expanded="true" />
-            <element signature="e#4155#4156#0" expanded="true" />
-            <element signature="e#4183#4184#0" expanded="true" />
+            <element signature="e#3916#3917#0" expanded="false" />
+            <element signature="e#3950#3951#0" expanded="false" />
+            <element signature="e#4155#4156#0" expanded="false" />
+            <element signature="e#4183#4184#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/devTools/android-sdk-macosx/sources/android-23/android/view/ActionMode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="337" column="20" selection-start-line="337" selection-start-column="20" selection-end-line="337" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Downloads/devTools/android-sdk-macosx/sources/android-23/android/os/Environment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.30842608">
           <caret line="334" column="23" selection-start-line="334" selection-start-column="23" selection-end-line="334" selection-end-column="23" />
           <folding>
             <element signature="e#0#29273#0" expanded="false" />
@@ -7152,45 +6948,189 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4054054">
+          <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/presenter/IHotFragmentView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/BaseFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+          <folding>
+            <element signature="e#1209#1210#0" expanded="true" />
+            <element signature="e#1237#1238#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/HotFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="e#1731#1732#0" expanded="true" />
+            <element signature="e#1783#1784#0" expanded="true" />
+            <element signature="e#1953#1954#0" expanded="true" />
+            <element signature="e#1992#1993#0" expanded="true" />
+            <element signature="e#2817#2818#0" expanded="true" />
+            <element signature="e#2865#2866#0" expanded="true" />
+            <element signature="e#2928#2929#0" expanded="true" />
+            <element signature="e#2965#2966#0" expanded="true" />
+            <element signature="e#3032#3033#0" expanded="true" />
+            <element signature="e#3073#3074#0" expanded="true" />
+            <element signature="e#3117#3118#0" expanded="true" />
+            <element signature="e#3157#3158#0" expanded="true" />
+            <element signature="e#3202#3203#0" expanded="true" />
+            <element signature="e#3241#3242#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/utils/FileUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/devTools/android-sdk-macosx/sources/android-23/android/view/ActionMode.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/presenter/HotPresenterImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="337" column="20" selection-start-line="337" selection-start-column="20" selection-end-line="337" selection-end-column="20" />
+          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/presenter/IHotPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19077902">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/presenter/ILocalPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/common/ShowApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14149444">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/common/CrashHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0015898251">
+          <caret line="177" column="19" selection-start-line="177" selection-start-column="19" selection-end-line="177" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1390#1391#0" expanded="true" />
+            <element signature="e#1425#1426#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/OnlineFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41494435">
+          <caret line="150" column="0" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/presenter/ILocalFragmentView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/presenter/LocalPresenterImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.814815">
+          <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2889#4733#0" expanded="true" />
+            <element signature="e#3089#3469#0" expanded="true" />
+            <element signature="e#3468#3469#0" expanded="true" />
+            <element signature="e#3600#3887#0" expanded="true" />
+            <element signature="e#3886#3887#0" expanded="true" />
+            <element signature="e#4732#4733#0" expanded="true" />
+            <element signature="e#4759#5010#0" expanded="true" />
+            <element signature="e#5009#5010#0" expanded="true" />
+            <element signature="e#8458#8618#0" expanded="true" />
+            <element signature="e#8617#8618#0" expanded="true" />
+            <element signature="e#8689#8955#0" expanded="true" />
+            <element signature="e#8954#8955#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/LocalFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.10967742">
-          <caret line="139" column="26" selection-start-line="139" selection-start-column="26" selection-end-line="139" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
           <folding>
-            <element signature="e#1784#1785#0" expanded="true" />
-            <element signature="e#1835#1836#0" expanded="true" />
-            <element signature="e#5286#7132#0" expanded="true" />
-            <element signature="e#5486#5859#0" expanded="true" />
-            <element signature="e#5858#5859#0" expanded="true" />
-            <element signature="e#5990#6277#0" expanded="true" />
-            <element signature="e#6276#6277#0" expanded="true" />
-            <element signature="e#6998#6999#0" expanded="true" />
-            <element signature="e#7077#7078#0" expanded="true" />
-            <element signature="e#7131#7132#0" expanded="true" />
-            <element signature="e#7158#7409#0" expanded="true" />
-            <element signature="e#7408#7409#0" expanded="true" />
-            <element signature="e#7685#8240#0" expanded="true" />
-            <element signature="e#8239#8240#0" expanded="true" />
-            <element signature="e#9694#9960#0" expanded="true" />
-            <element signature="e#9959#9960#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2081#2082#0" expanded="true" />
+            <element signature="e#2135#2136#0" expanded="true" />
+            <element signature="e#2611#2612#0" expanded="true" />
+            <element signature="e#2655#2656#0" expanded="true" />
+            <element signature="e#3027#3028#0" expanded="true" />
+            <element signature="e#3069#3070#0" expanded="true" />
+            <element signature="e#3267#3268#0" expanded="true" />
+            <element signature="e#3319#3320#0" expanded="true" />
+            <element signature="e#3374#3375#0" expanded="true" />
+            <element signature="e#3447#3448#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/simaben/funnyvideo/ui/VideoPlayActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8029851">
+          <caret line="103" column="25" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#3834#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2172#2524#0" expanded="true" />
+            <element signature="e#2523#2524#0" expanded="true" />
+            <element signature="e#2757#2956#0" expanded="true" />
+            <element signature="e#2955#2956#0" expanded="true" />
+            <element signature="e#3007#3283#0" expanded="true" />
+            <element signature="e#3282#3283#0" expanded="true" />
+            <element signature="e#3324#3535#0" expanded="true" />
+            <element signature="e#3534#3535#0" expanded="true" />
           </folding>
         </state>
       </provider>
