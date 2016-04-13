@@ -2,14 +2,11 @@ package com.simaben.funnyvideo.ui;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
-import android.text.TextUtils;
 
-import com.nostra13.universalimageloader.core.ImageLoader;
 import com.simaben.autoswaprefresh.BaseRecyclerAdapter;
 import com.simaben.autoswaprefresh.BaseRecyclerViewHolder;
 import com.simaben.funnyvideo.R;
 import com.simaben.funnyvideo.bean.OnlineChannel;
-import com.simaben.funnyvideo.bean.QiubaiVideo.ShowapiResBodyBean.PagebeanBean.ContentlistBean;
 
 import java.util.List;
 

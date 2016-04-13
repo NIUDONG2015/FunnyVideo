@@ -6,8 +6,8 @@ android {
 
     defaultConfig {
         applicationId "com.simaben.funnyvideo"
-        minSdkVersion 15
-        targetSdkVersion 23
+        minSdkVersion 11
+        targetSdkVersion 15
         versionCode 1
         versionName "1.0"
     }
