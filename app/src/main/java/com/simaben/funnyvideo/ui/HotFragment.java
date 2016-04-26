@@ -89,14 +89,11 @@ public class HotFragment extends BaseFragment implements IHotFragmentView,
         @Override
         public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
             super.onScrolled(recyclerView, dx, dy);
-            if (Math.abs(dy) > 100) {
-                int firstVisibleItemPosition = layoutManager.findFirstVisibleItemPosition();
-                int lastVisibleItemPosition = layoutManager.findLastVisibleItemPosition();
-                if (adapter.getCurrentPosition() > lastVisibleItemPosition || adapter.getCurrentPosition() < firstVisibleItemPosition) {
-                    adapter.restCurrentItem();
-                }
+            int firstVisibleItemPosition = layoutManager.findFirstVisibleItemPosition();
+            int lastVisibleItemPosition = layoutManager.findLastVisibleItemPosition();
+            if (adapter.getCurrentPosition() > lastVisibleItemPosition || adapter.getCurrentPosition() < firstVisibleItemPosition) {
+                adapter.restCurrentItem();
             }
-
         }
     };
 
