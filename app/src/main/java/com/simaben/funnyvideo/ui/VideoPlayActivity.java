@@ -105,6 +105,7 @@ public class VideoPlayActivity extends Activity {
                 return false;
             }
         });
+
     }
 
     public static Intent startSelf(Context ctx, String path, String name) {

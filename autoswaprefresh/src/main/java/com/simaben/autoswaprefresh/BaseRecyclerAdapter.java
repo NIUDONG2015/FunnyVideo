@@ -150,4 +150,5 @@ public abstract class BaseRecyclerAdapter<T> extends RecyclerView.Adapter<BaseRe
     public abstract void bindData(BaseRecyclerViewHolder holder, int position, T item);
 
 
+
 }

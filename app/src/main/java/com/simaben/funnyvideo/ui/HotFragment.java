@@ -3,9 +3,10 @@ package com.simaben.funnyvideo.ui;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.Toast;
 
 import com.simaben.autoswaprefresh.AutoLoadMoreRecyclerView;
 import com.simaben.autoswaprefresh.OnItemClickListener;
@@ -67,17 +68,37 @@ public class HotFragment extends BaseFragment implements IHotFragmentView,
         iHotPresenter.refresh();
     }
 
+    LinearLayoutManager layoutManager;
+
     private void initAdapter(List data) {
-        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getActivity(), M_COLUMN_COUNT);
+//        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getActivity(), M_COLUMN_COUNT);
+        layoutManager = new LinearLayoutManager(getActivity());
+
         adapter = new HotRecyclerViewAdapter(getActivity(), data, false, layoutManager);
         adapter.setOnItemClickListener(this);
+        adapter.setLayoutManager(layoutManager);
         mRecyclerView.setAdapter(adapter);
         mRecyclerView.setAutoLayoutManager(layoutManager);
-        mRecyclerView.addItemDecoration(new ItemDecorationAlbumColumns(getResources().getDimensionPixelSize(R.dimen.photos_list_spacing), M_COLUMN_COUNT));
+        mRecyclerView.addItemDecoration(new ItemDecorationAlbumColumns(getResources().getDimensionPixelSize(R.dimen.photos_list_spacing), 1));
         mRecyclerView.setOnLoadMoreListener(this);
+        mRecyclerView.addOnScrollListener(recyclerViewScrollListener);
         mRefreshLayout.setOnRefreshListener(this);
     }
 
+    private RecyclerView.OnScrollListener recyclerViewScrollListener = new RecyclerView.OnScrollListener() {
+        @Override
+        public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
+            super.onScrolled(recyclerView, dx, dy);
+            if (Math.abs(dy) > 100) {
+                int firstVisibleItemPosition = layoutManager.findFirstVisibleItemPosition();
+                int lastVisibleItemPosition = layoutManager.findLastVisibleItemPosition();
+                if (adapter.getCurrentPosition() > lastVisibleItemPosition || adapter.getCurrentPosition() < firstVisibleItemPosition) {
+                    adapter.restCurrentItem();
+                }
+            }
+
+        }
+    };
 
     @Override
     public void setRefreshing(boolean refreshing) {
@@ -97,6 +118,11 @@ public class HotFragment extends BaseFragment implements IHotFragmentView,
     @Override
     public void setRefreshViewMoreData(List data) {
         adapter.addMoreData(data);
+    }
+
+    @Override
+    public void toast(String msg) {
+        Toast.makeText(getActivity(), msg, Toast.LENGTH_SHORT).show();
     }
 
     @Override

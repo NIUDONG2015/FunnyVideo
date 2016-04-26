@@ -10,4 +10,6 @@ public interface IHotFragmentView {
     void notifyMoreLoaded();
     void setRefreshViewData(List data);
     void setRefreshViewMoreData(List data);
+
+    void toast(String msg);
 }

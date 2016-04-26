@@ -1,5 +1,7 @@
 package com.simaben.funnyvideo.presenter;
 
+import android.widget.Toast;
+
 import com.simaben.funnyvideo.bean.QiubaiVideo;
 import com.simaben.funnyvideo.common.Constants;
 import com.simaben.funnyvideo.retrofit.ShowService;
@@ -73,6 +75,7 @@ public class HotPresenterImpl implements IHotPresenter {
                         if (currentPage != 1) {
                             iHotFragmentView.notifyMoreLoaded();
                         }
+                        iHotFragmentView.toast(e.getMessage()+e.getLocalizedMessage());
                     }
 
                     @Override
